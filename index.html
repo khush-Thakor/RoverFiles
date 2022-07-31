@@ -73,6 +73,7 @@
       <br>
     </div>
     <script type="text/javascript">
+      //document.getElementById("");
       run_action('bwready');
       run_action('fwready');
       run_action('camready');
@@ -283,8 +284,8 @@ function photo(){
           <button class="mui-btn mui-btn--primary mui-btn--fab" onmousedown="set_speed('100')" id="button_opacity">5</button>
           <button class="mui-btn mui-btn--primary" onmousedown="toggle('div_appbar')" id="button_opacity">Fullscreen</button>
           <button class="mui-btn mui-btn--primary" id="button_opacity">Tilt</button>
-          <button class="mui-btn mui-btn--primary" id="button_opacity">Camera 1</button>
-          <button class="mui-btn mui-btn--primary" id="button_opacity">Camera 2</button>
+          <button class="mui-btn mui-btn--primary" onClick = "run_action('camera1')"id="button_opacity">Camera 1</button>
+          <button class="mui-btn mui-btn--primary" onClick = "run_action('camera2')" id="button_opacity">Camera 2</button>
           <button class="mui-btn mui-btn--primary" id="button_opacity">Inflate</button>
           <button class="mui-btn mui-btn--primary" id="button_opacity">Detach</button>
           <button class="mui-btn mui-btn--primary" id="button_opacity">Laser</button>
